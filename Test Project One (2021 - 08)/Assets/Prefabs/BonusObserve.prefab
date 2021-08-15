@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 5191887363828451022}
   - component: {fileID: 5191887363828451023}
   m_Layer: 0
-  m_Name: BonusObserve (1)
-  m_TagString: Untagged
+  m_Name: BonusObserve
+  m_TagString: GoodBonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

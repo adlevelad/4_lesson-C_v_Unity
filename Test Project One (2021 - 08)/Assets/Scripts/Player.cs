@@ -90,6 +90,7 @@ namespace TestProjectOne
         // методы бонусов и антибонусов
         protected internal void YesBonusSpeed()
         {
+            EventsTest.OnActivCamZoom();
             _speedPlayer = 10;
             Invoke("NoBonusSpeed", 15f);
         }
@@ -101,6 +102,7 @@ namespace TestProjectOne
 
         protected internal void YesBonusJump()
         {
+            EventsTest.OnActivCamZoom();
             _strangeJump = 100.0f;
             Invoke("NoBonusJump", 15f);
         }
@@ -112,6 +114,7 @@ namespace TestProjectOne
 
         protected internal void YesBonusLight()
         {
+            EventsTest.OnActivCamZoom();
             _light.type = LightType.Point;
             _light.color = Color.cyan;
             _light.intensity = 10.0f;
@@ -127,6 +130,7 @@ namespace TestProjectOne
         
         protected internal void YesDeBonusSlow()
         {
+            EventsTest.OnActivCamShake();
             _speedPlayer = 1;
             Invoke("NoBonusSpeed", 15f);
         }
@@ -138,6 +142,7 @@ namespace TestProjectOne
 
         protected internal void YesDeBonusRevers()
         {
+            EventsTest.OnActivCamShake();
             _revers = true;
             Invoke("NoDeBonusRevers", 15.0f);
         }
@@ -149,6 +154,7 @@ namespace TestProjectOne
         
         public void YesBonusFlay()
         {
+            EventsTest.OnActivCamZoom();
             _rigidbody.useGravity = false;
             var locPos = transform.localPosition;
             locPos = new Vector3(locPos.x, Mathf.PingPong(Time.time, _lenghtFlay), locPos.z);
@@ -166,6 +172,7 @@ namespace TestProjectOne
         
         public void YesBonusObserve()
         {
+            EventsTest.OnActivCamZoom();
             _speedPlayer = 3;
             _rigidbody.useGravity = false;
             var locPos = transform.localPosition;
@@ -186,11 +193,13 @@ namespace TestProjectOne
         
         public void YesDeBonusReturn()
         {
+            EventsTest.OnActivCamShake();
             transform.localPosition = _vector3;
         }
         
         public void YesDeBonusSee()
         {
+            EventsTest.OnActivCamShake();
             _material.color = new Color(_color.r, _color.g, _color.b);
             //_material.color = new Color(_material.color.r, _material.color.g, _material.color.b, Mathf.PingPong(Time.time, 1));
             

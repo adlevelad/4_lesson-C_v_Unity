@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TestProjectOne;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace TestProjectOne
 {
@@ -15,6 +16,11 @@ namespace TestProjectOne
                 other.GetComponent<Player>().YesBonusObserve();
             }
             Destroy(gameObject);
+        }
+
+        private void Start()
+        {
+    
         }
     }
 }

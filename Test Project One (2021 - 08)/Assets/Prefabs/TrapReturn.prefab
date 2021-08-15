@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 486402656998271720}
   m_Layer: 0
   m_Name: TrapReturn
-  m_TagString: Untagged
+  m_TagString: BadBonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

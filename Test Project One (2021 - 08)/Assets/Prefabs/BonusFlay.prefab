@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1751068782862388133}
   - component: {fileID: 1751068782862388186}
   m_Layer: 0
-  m_Name: BonusFlay (1)
-  m_TagString: Untagged
+  m_Name: BonusFlay
+  m_TagString: GoodBonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
